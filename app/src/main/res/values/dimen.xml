@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="base_padding">5dp</dimen>
+    <dimen name="padding_20_dp">20dp</dimen>
+    <dimen name="base_margin">5dp</dimen>
+
+    <dimen name="ui_stroke_size">1dp</dimen>
+    <dimen name="ui_rectangle_radius">5dp</dimen>
+
+    <dimen name="btn_audio_ctrl_height">36dp</dimen>
+    <dimen name="messaging_bottom_bar_ui_size">27dp</dimen>
+    <dimen name="chat_list_user_icon_size">45dp</dimen>
+    <dimen name="chat_list_audio_tag_size">20dp</dimen>
+
+    <dimen name="text_size_16_sp">16sp</dimen>
+
+</resources>

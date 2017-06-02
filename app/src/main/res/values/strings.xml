@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SimpleVoiceMessaging</string>
+
+    <string name="str_btn_audio_normal">按住 说话</string>
+    <string name="str_btn_audio_recording">松开 发送</string>
+    <string name="str_btn_audio_want_to_cancel">松开 取消</string>
+
+    <string name="str_dlg_recording_slide_to_cancel">手指上滑，取消发送</string>
+    <string name="str_dlg_recording_up_done_cancel">松开手指，取消发送</string>
+    <string name="str_dlg_recording_length_to_short">说话时间太短</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

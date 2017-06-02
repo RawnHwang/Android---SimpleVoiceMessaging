@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_recording_dialog"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_20_dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/base_padding"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/iv_audio_dlg_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recorder" />
+
+        <ImageView
+            android:id="@+id/iv_audio_dlg_voice_level"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/voice_level_v1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_audio_dlg_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_dlg_recording_slide_to_cancel"
+        android:layout_marginTop="@dimen/base_margin"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_16_sp"/>
+
+</LinearLayout>

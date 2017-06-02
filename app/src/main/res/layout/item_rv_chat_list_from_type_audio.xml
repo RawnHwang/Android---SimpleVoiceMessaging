@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/base_padding">
+
+    <ImageView
+        android:id="@+id/iv_chat_user_icon"
+        android:layout_width="@dimen/chat_list_user_icon_size"
+        android:layout_height="@dimen/chat_list_user_icon_size"
+        android:layout_marginLeft="@dimen/base_margin"
+        android:background="@drawable/icon_user_chat_to" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_audio_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/base_margin"
+        android:layout_toRightOf="@id/iv_chat_user_icon"
+        android:background="@drawable/bg_message_chat_from"
+        android:gravity="center_vertical|right"
+        android:padding="@dimen/base_padding">
+
+
+        <ImageView
+            android:id="@+id/iv_audio_tag"
+            android:layout_width="@dimen/chat_list_audio_tag_size"
+            android:layout_height="@dimen/chat_list_audio_tag_size"
+            android:background="@drawable/icon_audio_from" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_audio_seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/base_margin"
+        android:layout_toRightOf="@id/rl_chat_audio_item"
+        android:text="16'" />
+
+</RelativeLayout>

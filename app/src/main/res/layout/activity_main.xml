@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="me.hwang.vm.ui.MainActivity"
+    android:background="@drawable/bg_message_list">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_french_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/base_padding"
+        android:background="@color/color_ghost_white">
+
+        <Button
+            android:id="@+id/btn_audio_switch"
+            android:layout_width="@dimen/messaging_bottom_bar_ui_size"
+            android:layout_height="@dimen/messaging_bottom_bar_ui_size"
+            android:layout_marginRight="@dimen/base_margin"
+            android:background="@drawable/bg_btn_audio_switch" />
+
+        <me.hwang.vm.widget.AudioCtrlButton
+            android:id="@+id/btn_audio_control"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_audio_ctrl_height"
+            android:layout_marginRight="@dimen/base_margin"
+            android:layout_weight="1"
+            android:text="@string/str_btn_audio_normal"
+            android:textColor="#444444"
+            android:background="@drawable/bg_btn_audio_ctrl_normal"/>
+
+        <Button
+            android:id="@+id/btn_emoji_switch"
+            android:layout_width="@dimen/messaging_bottom_bar_ui_size"
+            android:layout_height="@dimen/messaging_bottom_bar_ui_size"
+            android:layout_marginRight="@dimen/base_margin"
+            android:background="@drawable/bg_btn_emoji_switch" />
+
+        <Button
+            android:id="@+id/btn_more_switch"
+            android:layout_width="@dimen/messaging_bottom_bar_ui_size"
+            android:layout_height="@dimen/messaging_bottom_bar_ui_size"
+            android:background="@drawable/bg_btn_more_switch" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#7f3c6e"
+        android:visibility="gone"/>
+</LinearLayout>
